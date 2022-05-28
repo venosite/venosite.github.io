@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    background-color: #10141d;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+.navMenu {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: inline;
+    gap: 20px;
+    padding: 13px;
+    width: 100px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.navMenu a:hover {
+    color: #ff0000;
+}
+.main {
+    border: none;
+    border-radius: 12px;
+    width: 280px;
+    height: 300px;
+    display: block;
+    background-color: #eee;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-top: 200px;
+}
+.main h1 {
+    font-size: 35px;
+}
+.main p {
+    font-size: 15px;
+}
+.gt {
+    display: block;
+    padding: 13px;
+    border: none;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #d3d3d3e7;
+    color: black;
+    font-size: 19px;
+    margin-left: auto;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+}
+.gt:hover {
+    transition: 0.3s;
+    background-color: #222;
+    color: white;
+}
+.disc {
+    display: block;
+    padding: 13px;
+    border: none;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #d3d3d3e7;
+    color: black;
+    font-size: 19px;
+    margin-top: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+}
+.disc:hover {
+    transition: 0.2s;
+    background-color: #222;
+    color: white;
+}
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+}
+.footer {
+    position: absolute;
+    width: 99%;
+    bottom: 0;
+    color: #f6f4e6;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+@media only screen and (max-width: 768px) {
+    .navMenu {
+        display: flex;
+    }
+    .navMenu a {
+        display: inline-block;
+    }
+    .navMenu a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .footer {
+        bottom: 0;
+    }
+}
