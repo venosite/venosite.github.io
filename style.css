@@ -30,6 +30,11 @@ body {
 .navMenu a:hover {
     color: #ff0000;
 }
+.menu-logo{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
 .main {
     border: none;
     border-radius: 12px;
@@ -105,10 +110,23 @@ body {
 }
 @media only screen and (max-width: 768px) {
     .navMenu {
-        display: flex;
+        z-index: 2;
+        top: 120px;
+        background-color: #121b2e;
+        border-radius: 8px;
+        left: 78%;
     }
     .navMenu a {
-        display: inline-block;
+        font-size: 20px;
+        padding: 11px;
+        width: 100px;
+    }
+    .menu-logo{
+        display: block;
+        margin-right: 20px;
+        margin-left: auto;
+        width: 37px;
+        margin-top: 20px;
     }
     .navMenu a {
         float: none;
@@ -117,5 +135,9 @@ body {
     }
     .footer {
         bottom: 0;
+    }
+    .navMenu {
+        overflow: hidden;
+        transition: 0.5s;
     }
 }

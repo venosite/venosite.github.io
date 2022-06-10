@@ -14,22 +14,24 @@
 <body>
     <div id="particles-js"></div>
     <div>
-		<nav class="navMenu">
+		<nav class="navMenu" id="navMenu">
       	<a href="index.html">HOME</a>
       	<a href="https://github.com/NixonXC/Veno-bot">GITHUB</a>
       	<a href="https://discord.gg/efQhHPfsWS">DISCORD</a>
         </nav>
+        <img src="assets/res.png" class="menu-logo" onclick="togglemenu()">
     </div>
     <div class="main">
         <h1>VENOX</h1>
         <p>Venox Is an open-source bot<br> which helps you gather Information.</p>
-        <button href="https://discord.gg/efQhHPfsWS" class="gt">Github</button>
-        <button href="https://github.com/NixonXC/Venox" class="disc">Discord</button>
+        <button class="gt" id="github">Github</button>
+        <button class="disc" id="discord">Discord</button>
     </div>
     <div class="footer">
         <p>Made with <span class="heart">&#10084;</span> by NixonXC<br>Made For Educational Purposes</p>
     </div>
     <script src="particles.js-master/particles.js"></script>
     <script src="particles.js-master/app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
